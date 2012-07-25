@@ -1,12 +1,19 @@
 call pathogen#infect()
-"set t_Co=256
+set t_Co=256
 set background=dark
 set number
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set nocompatible
+map OH g^
+map OF g$
+imap OH g^
+imap OF g$
+cmap OH g^
+cmap OF g$
 syntax enable
-"let g:solarized_termcolors=256
+let g:solarized_termcolors=256
 let g:solarized_termtrans=1
 colorscheme solarized
 
