@@ -15,7 +15,7 @@ ZSH_THEME="mh"
 # CASE_SENSITIVE="true"
 
 # Comment this out to disable weekly auto-update checks
-# DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE="true"
 
 # Uncomment following line if you want to disable colors in ls
 DISABLE_LS_COLORS="true"
@@ -43,3 +43,9 @@ ssh() {
 issh() {
     /usr/bin/ssh $*
 }
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/jewellb/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
